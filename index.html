@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Persamaan Lingkaran</title>
+    <link rel="stylesheet" href="mat.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">📐 MathCircle</div>
+            <div class="logo">AUDREY JANEETA F S XI SIJA3</div>
+            <ul class="nav-links">
+                <li><a href="#subbab1">Pusat O(0,0)</a></li>
+                <li><a href="#subbab2">Pusat P(a,b)</a></li>
+                <li><a href="#subbab3">Bentuk Umum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="subbab1">
+            <h1>1. Persamaan Lingkaran dengan Pusat O(0,0)</h1>
+            <p>Tahukah kamu bagaimana rumus persamaan lingkaran terbentuk? Yuk, kita temukan rumusnya bersama-sama menggunakan konsep segitiga!</p>
+            
+            <h2>A. Menemukan Konsep</h2>
+            <p>Mari kita bayangkan sebuah lingkaran pada bidang Kartesius yang berpusat di titik O(0,0).</p>
+            <ol>
+                <li>Ambil sembarang titik <span class="math">P(x,y)</span> yang berada di garis lingkaran.</li>
+                <li>Tarik garis tegak lurus dari titik P ke sumbu X, dan beri nama titik Q. Maka terbentuklah panjang <span class="math">OQ = x</span> dan <span class="math">PQ = y</span>.</li>
+                <li>Jika kita hubungkan titik pusat O(0,0) ke titik P, garis OP tersebut merupakan jari-jari lingkaran (<span class="math">r</span>).</li>
+            </ol>
+            <p>Sekarang, perhatikan segitiga siku-siku OPQ. Berdasarkan <strong>Teorema Pythagoras</strong>, kita tahu bahwa:</p>
+            <div class="math-block">OP² = OQ² + PQ²</div>
+            <p>Jika kita substitusikan nilai-nilainya, maka diperoleh:</p>
+            <div class="math-block">r² = x² + y²</div>
+
+            <h2>B. Rumus Utama</h2>
+            <div class="formula-box">
+                📌 Kesimpulan:<br>
+                Persamaan lingkaran yang berpusat di titik O(0,0) dan memiliki jari-jari r adalah:<br>
+                <div class="math-block">x² + y² = r²</div>
+            </div>
+
+            <h2>C. Mari Mencoba</h2>
+            <div class="accordion-item">
+                <button class="accordion-section" onclick="toggleAccordion(this)">Soal 1: Diketahui Jari-jari <span>▼</span></button>
+                <div class="accordion-content">
+                    <p style="margin-top: 15px;"><strong>Soal:</strong> Tentukan persamaan lingkaran yang berpusat di O(0,0) dan berjari-jari 3!</p>
+                    <p><strong>Pembahasan:</strong> Tinggal masukkan ke rumus:<br>
+                    <span class="math">x² + y² = 3²</span><br>
+                    <span class="math">x² + y² = 9</span></p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-section" onclick="toggleAccordion(this)">Soal 2: Melalui Titik tertentu <span>▼</span></button>
+                <div class="accordion-content">
+                    <p style="margin-top: 15px;"><strong>Soal:</strong> Tentukan persamaan lingkaran yang berpusat di O(0,0) dan melalui titik P(5, 12)!</p>
+                    <p><strong>Pembahasan:</strong> Cari r² terlebih dahulu:<br>
+                    <span class="math">r² = 5² + 12²</span><br>
+                    <span class="math">r² = 25 + 144 = 169</span><br>
+                    Jadi, persamaannya adalah: <span class="math">x² + y² = 169</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subbab2">
+            <h1>2. Persamaan Lingkaran dengan Pusat P(a,b)</h1>
+            <p>Bagaimana jika pusat lingkarannya bergeser dan tidak lagi di titik (0,0)? Jangan khawatir, kita bisa mencarinya menggunakan rumus jarak dua titik!</p>
+            
+            <h2>A. Menemukan Konsep</h2>
+            <p>Misalkan kita memiliki lingkaran dengan titik pusat P(a,b) dan lingkaran tersebut melalui sebuah titik sembarang A(x,y). Jarak dari titik P ke titik A merupakan jari-jari lingkaran (r).</p>
+            <p>Ingat kembali rumus jarak antara dua titik A(x₁, y₁) dan B(x₂, y₂):</p>
+            <div class="math-block">d = √((x₂ - x₁)² + (y₂ - y₁)²)</div>
+            <p>Jika kita terapkan pada titik pusat P(a,b) dan titik A(x,y), maka jarak AP = r adalah:</p>
+            <div class="math-block">r = √((x - a)² + (y - b)²)</div>
+            <p>Kuadratkan kedua sisi untuk menghilangkan akar:</p>
+            <div class="math-block">r² = (x - a)² + (y - b)²</div>
+
+            <h2>B. Rumus Utama</h2>
+            <div class="formula-box">
+                📌 Kesimpulan:<br>
+                Persamaan lingkaran yang berpusat di titik P(a,b) dan memiliki jari-jari r adalah:<br>
+                <div class="math-block">(x - a)² + (y - b)² = r²</div>
+            </div>
+
+            <h2>C. Mari Mencoba</h2>
+            <div class="accordion-item">
+                <button class="accordion-section" onclick="toggleAccordion(this)">Soal 1: Diketahui Pusat dan Jari-jari <span>▼</span></button>
+                <div class="accordion-content">
+                    <p style="margin-top: 15px;"><strong>Soal:</strong> Tentukan persamaan lingkaran dengan pusat P(1,2) dan jari-jari r = 8!</p>
+                    <p><strong>Pembahasan:</strong> Substitusi a=1, b=2, dan r=8:<br>
+                    <span class="math">(x - 1)² + (y - 2)² = 8²</span><br>
+                    <span class="math">(x - 1)² + (y - 2)² = 64</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subbab3">
+            <h1>3. Bentuk Umum Persamaan Lingkaran</h1>
+            <p>Jika persamaan pada sub-bab sebelumnya kita jabarkan aljabarnya, kita akan mendapatkan bentuk umum lingkaran yang terlihat lebih panjang.</p>
+            
+            <h2>A. Memahami Rumus</h2>
+            <p>Bentuk umum dari persamaan lingkaran dituliskan sebagai berikut:</p>
+            <div class="math-block">x² + y² + Ax + By + C = 0</div>
+            <p>Jika kamu diberikan persamaan dalam bentuk umum ini, kamu bisa mencari kembali titik pusat dan jari-jarinya menggunakan rumus:</p>
+            <ul>
+                <li><strong>Titik Pusat:</strong> P = (-½A, -½B)</li>
+                <li><strong>Jari-jari (r):</strong> r = √( (-½A)² + (-½B)² - C )</li>
+            </ul>
+
+            <h2>B. Mari Mencoba</h2>
+            <div class="accordion-item">
+                <button class="accordion-section" onclick="toggleAccordion(this)">Soal 1: Mencari Pusat dan Jari-jari <span>▼</span></button>
+                <div class="accordion-content">
+                    <p style="margin-top: 15px;"><strong>Soal:</strong> Tentukan pusat dan jari-jari dari lingkaran x² + y² + 4x - 2y + 1 = 0!</p>
+                    <p><strong>Pembahasan:</strong><br>
+                    Diketahui A = 4, B = -2, dan C = 1.<br><br>
+                    • Pusat = (-½(4), -½(-2)) = <strong>(-2, 1)</strong><br>
+                    • Jari-jari r = √((-2)² + (1)² - 1) = √(4 + 1 - 1) = √4 = <strong>2</strong></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function toggleAccordion(element) {
+            // Mengambil elemen konten (div setelah button)
+            const content = element.nextElementSibling;
+            // Mengambil ikon panah di dalam button
+            const arrow = element.querySelector('span');
+            
+            if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                content.style.maxHeight = "0px";
+                content.style.padding = "0 15px";
+                arrow.innerHTML = "▼";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.padding = "15px";
+                arrow.innerHTML = "▲";
+            }
+        }
+    </script>
+</body>
+</html>
